@@ -20,7 +20,7 @@ app = Client(
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"Salam **{message.from_user.first_name }** \n\n __Mən tərcüməçi botam \n Mən istənilən dili sənin seçdiyin dilə çevirə bilirəm__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Support 🤖" ,url="https://t.me/JLBchat") ],               [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]   ]  ) )
+	await message.reply_text(text =f"Salam **{message.from_user.first_name }** \n\n __Mən tərcüməçi botam \n Mən istənilən dili sənin seçdiyin dilə çevirə bilirəm__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Support 🤖" ,url="https://t.me/JLBchat") ],               [InlineKeyboardButton("Abunə ol🧐", url="https://t.me/jlbots") ]   ]  ) )
                   
 
 
