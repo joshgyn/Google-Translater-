@@ -31,30 +31,30 @@ async def echo(client, message):
  
  keybord1= InlineKeyboardMarkup( [
         [ 
-            InlineKeyboardButton("Afrikaans", callback_data='af'),
-             InlineKeyboardButton("Albanian", callback_data='sq'),
-            InlineKeyboardButton("Amharic",callback_data ='am'),
+            InlineKeyboardButton("Afrikanca", callback_data='af'),
+             InlineKeyboardButton("Albanca", callback_data='sq'),
+            InlineKeyboardButton("Amharca",callback_data ='am'),
         ],
-        [   InlineKeyboardButton("Arabic", callback_data='ar'),
-        InlineKeyboardButton("Armenian", callback_data='hy'),      
-        InlineKeyboardButton("Azerbaijani",callback_data = 'az'),        
+        [   InlineKeyboardButton("Ərəbcə", callback_data='ar'),
+        InlineKeyboardButton("Ermənicə", callback_data='hy'),      
+        InlineKeyboardButton("Azərbaycanca",callback_data = 'az'),        
         ],
-        [InlineKeyboardButton("Basque",callback_data ="eu"),
-        	 InlineKeyboardButton("Belarusian",callback_data ="be"),       	
-	InlineKeyboardButton("Bengali",callback_data="bn")],
+        [InlineKeyboardButton("Baskca",callback_data ="eu"),
+        	 InlineKeyboardButton("Belarusca",callback_data ="be"),       	
+	InlineKeyboardButton("Benqalca",callback_data="bn")],
 	
-	[InlineKeyboardButton("Bosnian",callback_data = "bs"),
-	InlineKeyboardButton("Bulgarian",callback_data ="bg"),
-	InlineKeyboardButton("Catalan",callback_data = "ca")
+	[InlineKeyboardButton("Bosnakca",callback_data = "bs"),
+	InlineKeyboardButton("Bulqarca",callback_data ="bg"),
+	InlineKeyboardButton("Katalanca",callback_data = "ca")
 	],
 	[ 
-	InlineKeyboardButton("Corsican",callback_data ="co"),
-	InlineKeyboardButton("Croatian",callback_data = "hr"),
-	InlineKeyboardButton("Czech", callback_data = "cs"),
+	InlineKeyboardButton("Korsikaca",callback_data ="co"),
+	InlineKeyboardButton("Xorvatca",callback_data = "hr"),
+	InlineKeyboardButton("Çexcə", callback_data = "cs"),
 	],
-	[ InlineKeyboardButton("Danish",callback_data = "da"),
-	InlineKeyboardButton("Dutch",callback_data = "nl"),
-	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
+	[ InlineKeyboardButton("Danimarka",callback_data = "da"),
+	InlineKeyboardButton("Hollanda",callback_data = "nl"),
+	InlineKeyboardButton("Esperantoca",callback_data = "eo"),	 
 	],
 	[InlineKeyboardButton(" Növbəti --->",callback_data = "page2")
 	]
@@ -66,17 +66,17 @@ async def echo(client, message):
 @app.on_callback_query()
 async def translate_text(bot,update):
   keybord6 =  InlineKeyboardMarkup([
-       [InlineKeyboardButton("Thai",callback_data = "th"),
-       InlineKeyboardButton("Turkish",callback_data = "tr"),
-       InlineKeyboardButton("Turkmen",callback_data ="tk")     
+       [InlineKeyboardButton("Taylandca",callback_data = "th"),
+       InlineKeyboardButton("Türkcə",callback_data = "tr"),
+       InlineKeyboardButton("Türkməncə",callback_data ="tk")     
        ],
-       [InlineKeyboardButton("Ukrainian",callback_data = "uk"),
-       InlineKeyboardButton("Urdu",callback_data = "ur"),
-       InlineKeyboardButton("Uyghur",callback_data ="ug")
+       [InlineKeyboardButton("Ukranca",callback_data = "uk"),
+       InlineKeyboardButton("Urduca",callback_data = "ur"),
+       InlineKeyboardButton("Uyğurca",callback_data ="ug")
        
        ],
-       [InlineKeyboardButton("Uzbek",callback_data = "uz"),
-       InlineKeyboardButton("Vietnamese",callback_data ="vi"),
+       [InlineKeyboardButton("Özbəkcə",callback_data = "uz"),
+       InlineKeyboardButton("Vyetnamca",callback_data ="vi"),
        InlineKeyboardButton("Welsh",callback_data = "cy")
        
        ],
