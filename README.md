@@ -44,10 +44,10 @@ SOFTWARE.
 ```
 
 ## Support 🤖
-<a href="https://t.me/JLBchat">
+<a href="https://t.me/EtirafStory">
    <p> Support Group </p>
   </a>
-<a href="https://t.me/jlbots">
+<a href="https://t.me/EtirafStory">
    <p> Bot Updates </p>
   </a>
 
