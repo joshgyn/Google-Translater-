@@ -77,7 +77,7 @@ async def translate_text(bot,update):
        ],
        [InlineKeyboardButton("Özbəkcə",callback_data = "uz"),
        InlineKeyboardButton("Vyetnamca",callback_data ="vi"),
-       InlineKeyboardButton("Ulescə",callback_data = "cy")
+       InlineKeyboardButton("Uelscə",callback_data = "cy")
        
        ],
        [InlineKeyboardButton("Xosaca",callback_data = "xh"),
