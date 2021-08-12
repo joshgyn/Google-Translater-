@@ -1,8 +1,8 @@
 {
     "name": "Google Translater",
     "description": "Bot can translate any language to you selected language",
-    "repository": "https://github.com/lntechnical2/Google-Translater-",
-    "keywords": ["Google Translater", "pyrogram", "telegram bot"],
+    "repository": "https://github.com/joshgyn/Google-Translater-",
+    "keywords": ["Google Translater", "joshgyn", "telegram bot"],
     "env": {
         "TOKEN": {
             "description": "Your Bot token from @Botfather"
