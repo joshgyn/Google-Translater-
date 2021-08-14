@@ -20,11 +20,11 @@ app = Client(
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"Salam,Əziz **{message.from_user.first_name }** 🙋 \n\n __Mən tərcüməçi botam 🙆 \n Mən istənilən sözü/cümləni/paraqrafı sənin seçdiyin dilə çevirə bilirəm 🙇 \n İndi mənə tərcümə etmək istədiyin mesajı göndər🙂__ \n **/help yazaraq daha ətraflı məlumat alın.**",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Owner" ,url="https://t.me/sammekkim") ],               [InlineKeyboardButton("Creator", url="https://t.me/hasanli517") ],               [InlineKeyboardButton("Məlumat", url="https://t.me/MenZroyam") ]  ]  ) )
+	await message.reply_text(text =f"Salam,Əziz **{message.from_user.first_name }** 🙋 \n\n __Mən tərcüməçi botam 🙆 \n Mən istənilən sözü/cümləni/paraqrafı sənin seçdiyin dilə çevirə bilirəm 🙇 \n İndi mənə tərcümə etmək istədiyin mesajı göndər🙂__ \n **/help yazaraq daha ətraflı məlumat alın.**",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Owner" ,url="https://t.me/sammekkim") ],               [InlineKeyboardButton("Creator", url="https://t.me/hasanli517") ],               [InlineKeyboardButton("Məlumat", url="https://t.me/https://telegra.ph/AZ-Translate-08-13-2") ]  ]  ) )
 
 @app.on_message(filters.private & filters.command(['help']))
 async def help(client, message):
-	await message.reply_text(text =f"Salam **{message.from_user.first_name }** 🙋 \n\n **Mən tərcüməçi botam 🙆 \n Sizin işinizi dahada asanlaşdırmaq üçün yaradılmışam. 🙇 \n Mənə tərcümə etmək istədiyin mesajı göndər və tərcümə etmək istədiyin dili seç. **",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([     [InlineKeyboardButton("Məlumat", url="https://t.me/MenZroyam") ]  ]  ) )
+	await message.reply_text(text =f"Salam **{message.from_user.first_name }** 🙋 \n\n **Mən tərcüməçi botam 🙆 \n Sizin işinizi dahada asanlaşdırmaq üçün yaradılmışam. 🙇 \n Mənə tərcümə etmək istədiyin mesajı göndər və tərcümə etmək istədiyin dili seç. **",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([     [InlineKeyboardButton("Məlumat", url="https://t.me/https://telegra.ph/AZ-Translate-08-13-2") ]  ]  ) )
                                   
 	
 @app.on_message(filters.private & filters.text  )
