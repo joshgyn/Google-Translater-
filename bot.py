@@ -20,9 +20,14 @@ app = Client(
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"🔰Salam,Əziz **{message.from_user.first_name }** 🙋 \n\n __Mən müxtəlif dillərdə insanlara kömək olmaq üçün yaradılmış tərcüməçi botam. 🙆 \n Ümid edirəm ki, səndən məndən doğru şəkildə yararlanacaqsan☺__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("OWNER" ,url="https://t.me/sammekkim") ],               [InlineKeyboardButton("CREATOR", url="https://t.me/Hasanli517") ],                ]  ) )
+	await message.reply_text(text =f"🔰Salam,Əziz **{message.from_user.first_name }** 🙋 \n\n __Mən müxtəlif dillərdə insanlara kömək olmaq üçün yaradılmış tərcüməçi botam🙆. \n Ümid edirəm ki, səndən məndən doğru şəkildə yararlanacaqsan☺
+ \n İstifadə qaydası üçün /help toxun📄__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("OWNER" ,url="https://t.me/sammekkim") ],               [InlineKeyboardButton("CREATOR", url="https://t.me/Hasanli517") ],                ]  ) )
                   
 
+@app.on_message(filters.private & filters.command(['help']))
+async def help(client, message):
+	await message.reply_text(text =f"Salam **{message.from_user.first_name }** 🙋 \n\n **Mən tərcüməçi botam 🙆 \n İstənilən sözü/cümləni/paraqrafı sənin seçdiyin dilə çevirə bilirəm 🙇 🙇 \n Mənə tərcümə etmək istədiyin mesajı göndər və tərcümə etmək istədiyin dili seç.
+        
 
 
 @app.on_message(filters.private & filters.text  )
