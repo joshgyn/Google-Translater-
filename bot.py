@@ -59,8 +59,7 @@ async def echo(client, message):
 	InlineKeyboardButton("Esperantoca",callback_data = "eo"),	 
 	],
 	[InlineKeyboardButton(" Növbəti⏩",callback_data = "page2")
-	]
-	] )
+	]  ])
 	
  await  message.reply_text("Dili seç 👇",reply_to_message_id = message.message_id, reply_markup = keybord1) 
 
