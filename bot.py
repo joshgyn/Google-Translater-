@@ -20,11 +20,11 @@ app = Client(
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"Salam,🙋,Əziz **{message.from_user.first_name }**  \n\n __Mən müxtəlif dillərdə insanlara kömək olmaq üçün yaradılmış tərcüməçi botam. \n Ümid edirəm ki, səndən məndən doğru şəkildə yararlanacaqsan☺ \n **/help yazaraq daha ətraflı məlumat ala bilərsən.**",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Etiraf Botumuz 🤖" ,url="https://t.me/EtirafStoryBot?start") ],               [InlineKeyboardButton("Abunə ol🧐", url="https://t.me/EtirafStory") ],               [InlineKeyboardButton("Sahibim👨🏻‍💻", url="https://t.me/MenZroyam") ]  ]  ) )
+	await message.reply_text(text =f"Salam,🙋,Əziz **{message.from_user.first_name }**  \n\n __Mən müxtəlif dillərdə insanlara kömək olmaq üçün yaradılmış tərcüməçi botam. \n Ümid edirəm ki, səndən məndən doğru şəkildə yararlanacaqsan☺ \n **/help yazaraq daha ətraflı məlumat ala bilərsən.**",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                            [InlineKeyboardButton("Owner", url="https://t.me/sammekkim") ],               [InlineKeyboardButton("Creator", url="https://t.me/Hasanli517") ]  ]  ) )
 
 @app.on_message(filters.private & filters.command(['help']))
 async def help(client, message):
-	await message.reply_text(text =f"Salam **{message.from_user.first_name }** 🙋 \n\n **Mən tərcüməçi botam 🙆 \n Sizin işinizi dahada asanlaşdırmaq üçün yaradılmışam. 🙇 \n Mənə tərcümə etmək istədiyin mesajı göndər və tərcümə etmək istədiyin dili seç. **",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([    [InlineKeyboardButton("Məlumatℹ", url="https://telegra.ph/AZ-Translate-08-13-2") ], [InlineKeyboardButton("Sahibim👨🏻‍💻", url="https://t.me/MenZroyam") ]  ]  ) )
+	await message.reply_text(text =f"Salam **{message.from_user.first_name }** 🙋 \n\n **Mən tərcüməçi botam 🙆 \n Sizin işinizi dahada asanlaşdırmaq üçün yaradılmışam. 🙇 \n Mənə tərcümə etmək istədiyin mesajı göndər və tərcümə etmək istədiyin dili seç. **",reply_to_message_id = message.message_id ,parse_mode="markdown" )
                                   
 	
 @app.on_message(filters.private & filters.text  )
@@ -32,7 +32,7 @@ async def echo(client, message):
 	
  
  keybord1= InlineKeyboardMarkup( [
-        [ 
+        [   
             InlineKeyboardButton("Afrikanca", callback_data='af'),
              InlineKeyboardButton("Albanca", callback_data='sq'),
             InlineKeyboardButton("Amharca",callback_data ='am'),
