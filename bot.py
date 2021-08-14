@@ -20,7 +20,7 @@ app = Client(
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"Salam,🙋,Əziz **{message.from_user.first_name }**  \n\n __Mən müxtəlif dillərdə insanlara kömək olmaq üçün yaradılmış tərcüməçi botam. \n Ümid edirəm ki, səndən məndən doğru şəkildə yararlanacaqsan☺ \n **/help yazaraq daha ətraflı məlumat ala bilərsən.**",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                            [InlineKeyboardButton("Owner", url="https://t.me/sammekkim") ],               [InlineKeyboardButton("Creator", url="https://t.me/Hasanli517") ]  ]  ) )
+	await message.reply_text(text =f"Salam,🙋,Əziz **{message.from_user.first_name }**  \n\n __Mən müxtəlif dillərdə insanlara kömək olmaq üçün yaradılmış tərcüməçi botam. \n Ümid edirəm ki, səndən məndən doğru şəkildə yararlanacaqsan☺ \n **/help yazaraq daha ətraflı məlumat ala bilərsən.**",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                            [InlineKeyboardButton("Owner", url="https://t.me/sammekkim") ],               [InlineKeyboardButton("Creator", url="https://t.me/Hasanli517") ]  ]  ]  ) )
 
 @app.on_message(filters.private & filters.command(['help']))
 async def help(client, message):
